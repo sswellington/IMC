@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Cálculo de IMC </title>
+        <link rel="stylesheet" type="text/css" href="_css/style.css">
+        <script type="text/javascript" src="_javascript/imc.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <a id="home" href="/">Home </a><img src="_image/IMC-600x382.png" id="imgMain">
+            <form id="formImc">
+                <fieldset>
+                    <legend>Calculation of IMC </legend>
+                    <legend>Kilos (Kg)</legend>
+                    <input type="number" name="kg" size="20" min=20 max="260" value="65" />
+                    <legend>Centimetros (Cm)</legend>
+                    <input type="number" name="cm" size="20" min=60 max="150" value="175" />
+                    
+                    <br>
+                    <legend>Resultado</legend>
+                    <input type="text" name="imc" disabled="disabled" size="15">
+                    <label for="grau">
+                        <span style="padding-left:25px">Grau :</span>
+                    </label>
+                    <input type="text" name="grau" disabled="disable" size="15">
+                    
+                    <br><br>
+                    <a onclick="imc();" id="button">Calcular</a>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

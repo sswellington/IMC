@@ -1,0 +1,1 @@
+function imc(){var e=document.getElementById("formImc"),o=e.kg.value,a=e.cm.value/100,m=o/(a*a);e.imc.value=m.toFixed(2),e.grau.value=m<18.5?"Abaixo do peso":m<24.9?"Peso normal":m<29.9?"Sobrepeso":m<39.9?"Obeso":"Obeso Mórbido"}
